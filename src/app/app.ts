@@ -11,4 +11,9 @@ import { About } from "./about/about";
 })
 export class App {
   protected readonly title = signal('Angular-Project');
+  userName:string='Bassel';
+  userEmail:string='bassel.dev.com';
+  userPhone:number=12345;
+  userStatus:boolean=false;
+  status:string='active';
 }

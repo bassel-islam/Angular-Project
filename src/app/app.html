@@ -1,3 +1,7 @@
 <p>Hello from App Root</p>
 <app-home></app-home>
 <app-about></app-about>
+<p>Name: {{userName}}</p>
+<p>Email: {{userEmail}}</p>  <!--data interpolation-->
+<p>Phone: {{userPhone}}</p>
+<button [disabled]="userStatus" [attr.data-status]="status">click</button>   <!--property binding-->  <!--attribute binding-->
