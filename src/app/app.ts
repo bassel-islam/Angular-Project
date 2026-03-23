@@ -2,10 +2,11 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Home } from "./pages/app-home/home.component";
 import { About } from "./about/about";
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Home, About],
+  imports: [RouterOutlet, Home, About,FormsModule],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
@@ -17,6 +18,7 @@ export class App {
   userStatus:boolean=false;
   status:string='active';
   flag:boolean=false;
+  searchInput:string='';
 
   log():void{
     console.log("hello!!");
