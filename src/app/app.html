@@ -15,3 +15,7 @@
 <!--2 way binding-->
 <input type="text" placeholder="search" [(ngModel)]="searchInput"/>
 {{searchInput}}
+
+<!--ng class ,  ng styles-->
+<p [ngClass]="{'bg-info':flag}">Hey holla hello</p>
+<p [ngStyle]="{color:flag? 'red':'blue'}">Hey holla hello</p>

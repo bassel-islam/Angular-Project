@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { Home } from "./pages/app-home/home.component";
 import { About } from "./about/about";
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Home, About,FormsModule],
+  imports: [RouterOutlet, Home, About,FormsModule,CommonModule],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
