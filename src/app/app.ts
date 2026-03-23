@@ -16,4 +16,5 @@ export class App {
   userPhone:number=12345;
   userStatus:boolean=false;
   status:string='active';
+  flag:boolean=false;
 }

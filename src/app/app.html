@@ -5,3 +5,4 @@
 <p>Email: {{userEmail}}</p>  <!--data interpolation-->
 <p>Phone: {{userPhone}}</p>
 <button [disabled]="userStatus" [attr.data-status]="status">click</button>   <!--property binding-->  <!--attribute binding-->
+<p [style.color]="flag ? 'red' : 'black' ">userName {{userName}}</p>
