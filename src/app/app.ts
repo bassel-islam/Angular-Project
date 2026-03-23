@@ -17,4 +17,11 @@ export class App {
   userStatus:boolean=false;
   status:string='active';
   flag:boolean=false;
+
+  log():void{
+    console.log("hello!!");
+  }
+  showAlert(e:Event):void{
+    console.log(e);
+  }
 }

@@ -6,3 +6,5 @@
 <p>Phone: {{userPhone}}</p>
 <button [disabled]="userStatus" [attr.data-status]="status">click</button>   <!--property binding-->  <!--attribute binding-->
 <p [style.color]="flag ? 'red' : 'black' ">userName {{userName}}</p>
+<button class="btn btn-success" (click)="log()">click</button>
+<input type="text" class="form-control" (input)="showAlert($event)">
