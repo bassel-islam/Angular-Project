@@ -4,10 +4,11 @@ import { Home } from "./pages/app-home/home.component";
 import { About } from "./about/about";
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { Child } from './child/child';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Home, About,FormsModule,CommonModule],
+  imports: [RouterOutlet, Home, About,FormsModule,CommonModule,Child],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
@@ -20,6 +21,7 @@ export class App {
   status:string='active';
   flag:boolean=false;
   searchInput:string='';
+  friends:string[]=['bassel,ahmed,ehab,omar'];
 
   log():void{
     console.log("hello!!");

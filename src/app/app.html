@@ -19,3 +19,12 @@
 <!--ng class ,  ng styles-->
 <p [ngClass]="{'bg-info':flag}">Hey holla hello</p>
 <p [ngStyle]="{color:flag? 'red':'blue'}">Hey holla hello</p>
+
+<!--ng For-->
+<div *ngFor="let item of friends">
+    <p>Friend name is: {{item}}</p>
+</div>
+
+
+<!--passing data between parent and child-->
+<app-child [dataFromParent]="userName"></app-child>
